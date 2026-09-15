@@ -1,10 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:gravixor/product/product_app.dart';
+import 'package:gravixor/presentation/gravixor_app.dart';
 
 void main() {
-  testWidgets('Smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: ProductApp()));
-    expect(find.byType(ProductApp), findsOneWidget);
+  testWidgets('GravixorApp smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const GravixorApp());
+    expect(find.byType(GravixorApp), findsOneWidget);
   });
 }
