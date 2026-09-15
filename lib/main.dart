@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'presentation/gravixor_app.dart';
+import 'gravixor_app.dart';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const GravixorApp());
 }
